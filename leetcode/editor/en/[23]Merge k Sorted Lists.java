@@ -65,7 +65,7 @@ import java.util.TreeSet;
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+class Solution23 {
     class Wrapper {
         ListNode n;
         int i;
