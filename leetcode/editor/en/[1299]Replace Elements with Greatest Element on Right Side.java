@@ -36,10 +36,35 @@
 // Related Topics Array 👍 924 👎 154
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution1299 {
     public int[] replaceElements(int[] arr) {
-        
+        int[] ret = new int[arr.length];
+
+        if (ret.length > 0) {
+            ret[ret.length-1] = -1;
+        }
+        int max = arr[arr.length-1];
+
+        for (int i = arr.length-2; i >= 0; i--) {
+            ret[i] = max;
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+//        for (int j = 0; j < arr.length; j++) {
+//            System.out.print(arr[j]+" ");
+//        }
+//        System.out.println();
+//        for (int j = 0; j < ret.length; j++) {
+//            System.out.print(ret[j]+" ");
+//        }
+
+        return ret;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
