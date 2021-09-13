@@ -37,7 +37,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution {
+class Solution61 {
     public ListNode rotateRight(ListNode head, int k) {
 
         if (k == 0 || head == null) {
@@ -80,7 +80,7 @@ class Solution {
         ListNode l2 = new ListNode(2);
         l0.next = l1;
         l1.next = l2;
-        new Solution().rotateRight(l0, 4);
+        new Solution61().rotateRight(l0, 4);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
