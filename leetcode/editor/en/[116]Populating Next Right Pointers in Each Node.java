@@ -78,7 +78,7 @@ class Node {
 };
 */
 
-class Solution {
+class Solution116 {
     public Node connect(Node root) {
         recur(root);
         return root;
