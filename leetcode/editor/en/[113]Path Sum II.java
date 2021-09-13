@@ -62,7 +62,7 @@ import java.util.List;
  *     }
  * }
  */
-class Solution {
+class Solution113 {
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
         List<List<Integer>> ret = new ArrayList<>();
         List<Integer> il = new ArrayList<>();
