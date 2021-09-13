@@ -26,7 +26,7 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution59 {
 
     @FunctionalInterface
     interface Move {
@@ -235,7 +235,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        new Solution().generateMatrix(4);
+        new Solution59().generateMatrix(4);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

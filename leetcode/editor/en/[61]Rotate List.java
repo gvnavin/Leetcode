@@ -37,9 +37,50 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
-class Solution61 {
+class Solution {
     public ListNode rotateRight(ListNode head, int k) {
-        return new ListNode(1);
+
+        if (k == 0 || head == null) {
+            return head;
+        }
+
+        ListNode end = head;
+        k--;
+
+        while(k > 0) {
+            if (end.next != null) {
+                end = end.next;
+            } else {
+                end = head;
+            }
+            k--;
+        }
+
+        ListNode previous = null;
+        ListNode center = head;
+
+        while(end.next != null) {
+            end = end.next;
+            previous = center;
+            center = center.next;
+        }
+
+        if (previous != null) {
+            previous.next = null;
+            end.next = head;
+            head = center;
+        }
+
+        return head;
+    }
+
+    public static void main(String[] args) {
+        ListNode l0 = new ListNode(0);
+        ListNode l1 = new ListNode(1);
+        ListNode l2 = new ListNode(2);
+        l0.next = l1;
+        l1.next = l2;
+        new Solution().rotateRight(l0, 4);
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
