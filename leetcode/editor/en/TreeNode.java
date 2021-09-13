@@ -115,4 +115,13 @@ public class TreeNode {
         result = result * PRIME + ($right == null ? 43 : $right.hashCode());
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "TreeNode{" +
+                "val=" + val +
+                ", left=" + left +
+                ", right=" + right +
+                '}';
+    }
 }
