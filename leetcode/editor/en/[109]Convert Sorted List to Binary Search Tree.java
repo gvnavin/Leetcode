@@ -77,7 +77,7 @@ import java.util.List;
  *     }
  * }
  */
-class Solution {
+class Solution109 {
     public TreeNode sortedListToBST(ListNode head) {
         List<Integer> inp = new ArrayList<>();
         while(head != null) {
