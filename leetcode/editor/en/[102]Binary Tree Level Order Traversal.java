@@ -34,6 +34,10 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -49,9 +53,33 @@
  *     }
  * }
  */
-class Solution {
+class Solution102 {
     public List<List<Integer>> levelOrder(TreeNode root) {
-        
+        List<List<Integer>> ret = new ArrayList<List<Integer>>();
+        if (root == null) {
+            return ret;
+        }
+        ArrayList<TreeNode> q = new ArrayList<>();
+        q.add(root);
+        while (!q.isEmpty()) {
+            ArrayList<Integer> levelValues = new ArrayList<>();
+            ArrayList<TreeNode> popedTreeNodes = new ArrayList<>();
+            for (TreeNode treeNode : q) {
+                levelValues.add(treeNode.val);
+                popedTreeNodes.add(treeNode);
+            }
+            q.clear();
+            for (TreeNode locTreeNode : popedTreeNodes) {
+                if (locTreeNode.left != null) {
+                    q.add(locTreeNode.left);
+                }
+                if (locTreeNode.right != null) {
+                    q.add(locTreeNode.right);
+                }
+            }
+            ret.add(levelValues);
+        }
+        return ret;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
