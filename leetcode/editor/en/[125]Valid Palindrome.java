@@ -47,7 +47,7 @@ class Solution125 {
                 beg++;
             }
 
-            while (end >=0 && !isAlphaNumeric(s.charAt(end))) {
+            while (end >= 0 && !isAlphaNumeric(s.charAt(end))) {
 //                System.out.println("end : " + end + ", " + s.charAt(end));
                 end--;
             }
