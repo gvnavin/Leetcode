@@ -139,12 +139,12 @@ class Solution394 {
         return charAt >= '0' && charAt <= '9';
     }
 
-//    public static void main(String[] args) {
-//        new Solution394().decodeString("10[a]2[bc]");
-//        new Solution394().decodeString("3[a]2[bc]");
-//        new Solution394().decodeString("3[a2[c]]");
-//        new Solution394().decodeString("2[abc]3[cd]ef");
-//        new Solution394().decodeString("abc3[cd]xyz");
-//    }
+    public static void main(String[] args) {
+        new Solution394().decodeString("10[a]2[bc]");
+        new Solution394().decodeString("3[a]2[bc]");
+        new Solution394().decodeString("3[a2[c]]");
+        new Solution394().decodeString("2[abc]3[cd]ef");
+        new Solution394().decodeString("abc3[cd]xyz");
+    }
 }
 //leetcode submit region end(Prohibit modification and deletion)
