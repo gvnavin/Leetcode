@@ -53,7 +53,7 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
+class Solution236 {
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         return recur(root, p, q);
     }
