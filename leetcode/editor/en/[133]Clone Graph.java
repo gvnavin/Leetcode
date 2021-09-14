@@ -102,7 +102,7 @@ class Node {
 import java.util.HashMap;
 import java.util.Map;
 
-class Solution {
+class Solution133 {
     Map<Node, Node> memo = new HashMap<>();
     public Node cloneGraph(Node node) {
         memo.clear();
