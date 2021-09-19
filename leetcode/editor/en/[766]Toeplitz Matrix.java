@@ -48,7 +48,7 @@
 
 
 //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
+class Solution766 {
     public boolean isToeplitzMatrix(int[][] m) {
         int r = m.length;
         int c = m[0].length;
